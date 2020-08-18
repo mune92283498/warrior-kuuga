@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import './assets/styles/style';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+type State = {
+  choices: string[];
+  lines: string[];
+  currentId: "init"
+  dataset: {};
 }
-
-export default App;
+export default class App extends React.Component<State> {
+  render() {
+    return <div></div>;
+  }
+}

@@ -1,14 +1,13 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './assets/styles/style';
 
-type State = {
-  choices: string[];
-  lines: string[];
-  currentId: "init"
-  dataset: {};
+type Props = {
+  id: string;
 }
-export default class App extends React.Component<State> {
-  render() {
-    return <div></div>;
-  }
-}
+const App: React.FC<Props> = (props: Props) => {
+  const [tribe, setTribe] = React.useState(false);          // リントかグロンギか管理
+  const [allCheck, setAllCheck] = React.useState(false);    // 全てのキャラクターを閲覧したか管理
+  return <>{}</>;
+};
+
+export default App;

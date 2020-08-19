@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) => (
   })
 ));
 
- const Charactors = (props) => {
+ const Charactor = (props: any) => {
    const classes = useStyles();
     return (
       <Button
@@ -26,4 +26,4 @@ const useStyles = makeStyles((theme: Theme) => (
   );
 }
 
-export default Charactors;
+export default Charactor;

@@ -2,28 +2,34 @@ import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles((theme: Theme) => (
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    "button": {
-      borderColor: '#FFB549',
-      color: "#FFB549",
-      "&:hover": {
-        backgroundColor: "#FFB549",
-        color: "light"
-      }
+    button: {
+      borderColor: '#000000',
+      color: '#000000',
+      '&:hover': {
+        backgroundColor: '#FFFFFF',
+      },
     },
   })
-));
+);
 
- const Charactor = (props: any) => {
-   const classes = useStyles();
-    return (
-      <Button
-        className={classes.button}
-        variant='outlined' onClick={() => props.id}>
-        白い戦士
-      </Button>
-  );
+const classes = useStyles();
+
+type Props = {
+  warrior: {
+    id: string;
+    content: string;
+  }
 }
+
+const Charactor: React.FC<Props> = ({ warrior }) =>
+  (
+    <Button
+      className={classes.button}
+      variant='outlined'>
+      {warrior.content}
+    </Button>
+  );
 
 export default Charactor;

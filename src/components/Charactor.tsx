@@ -1,4 +1,5 @@
 import React from 'react';
+import { CharactorState } from '../types';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
@@ -16,20 +17,11 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const classes = useStyles();
 
-type Props = {
-  warrior: {
-    id: string;
-    content: string;
-  }
-}
-
-const Charactor: React.FC<Props> = ({ warrior }) =>
-  (
-    <Button
-      className={classes.button}
-      variant='outlined'>
-      {warrior.content}
+const Charactor: React.FC<CharactorState> = props =>{
+ return (
+    <Button className={classes.button} variant='outlined'>
+      {props.content}
     </Button>
-  );
+  )};
 
 export default Charactor;

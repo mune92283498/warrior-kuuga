@@ -9,9 +9,9 @@ const [tribe, setTribe] = React.useState(false);          // リントかグロ�
 const [allCheck, setAllCheck] = React.useState(false);    // 全てのキャラクターを閲覧したか管理
 
 
-const App: React.FC<Props> = ({ warrior }) => (
+const App: React.FC<Props> = ()=> (
   <>
-    <CharactorsList warrior={warrior} />
+    <CharactorsList />
   </>
 )
 

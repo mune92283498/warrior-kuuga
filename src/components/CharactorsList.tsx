@@ -5,7 +5,7 @@ import { Charactor } from './index';
 // type buttonProps = ComponentProps<typeof Charactor>;
 type CharactorsListProps = CharactorsListState;
 
-const CharactorsList: React.FC<CharactorsListProps> = props => {
+const CharactorsList: React.FC<CharactorsListProps> = (props) => {
   return(
     <div>
       {props.charactors.map((charactor: CharactorState) => (

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const classes = useStyles();
 
-const Charactor: React.FC<CharactorState> = props =>{
+const Charactor: React.FC<CharactorState> = (props) =>{
  return (
     <Button className={classes.button} variant='outlined'>
       {props.content}

@@ -1,27 +1,20 @@
 import React from 'react';
 import { CharactorState } from '../types';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import InputStyles from './InputStyles';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    button: {
-      borderColor: '#000000',
-      color: '#000000',
-      '&:hover': {
-        backgroundColor: '#FFFFFF',
-      },
-    },
-  })
-);
+// Buttonではなく、ChatbotのListItemで各フォームを表現する
+// いったん同じようにコーディングして、改めてデータの流れや処理を参考にして再度理解する
+// まず、ListItemをMaterial-UIからimportしてきて、利用するところから作業する
 
-const classes = useStyles();
+
+const classes = InputStyles();
 
 const Charactor: React.FC<CharactorState> = (props) =>{
  return (
-    <Button className={classes.button} variant='outlined'>
-      {props.content}
-    </Button>
-  )};
+   <Button className={classes.whiteKuuga} variant='outlined'>
+     {props.content}
+   </Button>
+ );};
 
 export default Charactor;

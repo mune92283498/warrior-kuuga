@@ -12,7 +12,7 @@ const CharactorsList: React.FC<CharactorsListProps> = (props) => {
         <Charactor
           key={charactor.id}
           id={charactor.id}
-          content={charactor.content}
+          name={charactor.name}
         />
       ))}
     </div>

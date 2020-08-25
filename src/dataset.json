@@ -1,0 +1,25 @@
+{
+    "init": {
+        "kuugaForms":[{
+          "id": "whiteKuuga",
+          "name": "白の戦士"
+        },
+        {
+          "id": "redKuuga",
+          "name": "赤の戦士"
+        },
+        {
+          "id": "blueKuuga",
+          "name": "青の戦士"
+        },
+        {
+          "id": "greenKuuga",
+          "name": "緑の戦士"
+        },
+        {
+          "id": "perpleKuuga",
+          "name": "紫の戦士"
+        }
+      ]
+    }
+}

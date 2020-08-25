@@ -1,6 +1,6 @@
 export type CharactorState = {
   id: string;
-  content: string;
+  name: string;
 }
 
 export type CharactorsListState = {

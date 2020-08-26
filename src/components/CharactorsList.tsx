@@ -1,20 +1,19 @@
-import React, { ComponentProps } from 'react';
-import { CharactorState, CharactorsListState } from '../types';
+import React from 'react';
+import { CharactorsListState } from '../types';
 import { Charactor } from './index';
 
-// type buttonProps = ComponentProps<typeof Charactor>;
 type CharactorsListProps = CharactorsListState;
 
 const CharactorsList: React.FC<CharactorsListProps> = (props) => {
-  return(
+  return (
     <div>
-      {props.charactors.map((charactor: CharactorState) => (
-        <Charactor
-          key={charactor.id}
-          id={charactor.id}
-          name={charactor.name}
-        />
-      ))}
+      {props.charactors.map((value, index) => {
+        return (
+          <div>
+            <Charactor id={value.id} name={value.name} key={index.toString() }/>
+          </div>
+        );
+      })}
     </div>
   )
 };

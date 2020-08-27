@@ -1,5 +1,5 @@
 # :thought_balloon: warrior-kuugaとは
-戦士クウガのチャット型バトルアプリです。
+仮面ライダークウガの素晴らしさをただただ伝えるアプリです。
 ---
 ## :computer: URL
 

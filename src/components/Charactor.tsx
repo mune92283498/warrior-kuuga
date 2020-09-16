@@ -94,7 +94,7 @@ export const Charactor: React.FC<Props> = ({forms}) => {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             {forms.map((form) => (
-              <Button className={classes.button} size='large' variant='outlined' color='secondary' onClick={clickDialogOpen}>
+              <Button className={classes.button} key={form.toString()} size='large' variant='outlined' color='secondary' onClick={clickDialogOpen}>
                 {form}
               </Button>
             ))}
@@ -105,10 +105,28 @@ export const Charactor: React.FC<Props> = ({forms}) => {
             </DialogTitle>
             <DialogContent dividers>
               <Typography variant="subtitle1">
-                パンチ力：
+                フォーム名：
               </Typography>
               <Typography variant="subtitle1">
+                碑文内容：
+              </Typography>
+              <Typography>
+                身長
+              </Typography>
+              <Typography>
+                体重
+              </Typography>
+              <Typography>
+                パンチ力：
+              </Typography>
+              <Typography>
                 キック力：
+              </Typography>
+              <Typography>
+                必殺技：
+              </Typography>
+              <Typography>
+                オススメシーン：
               </Typography>
             </DialogContent>
             <DialogActions>

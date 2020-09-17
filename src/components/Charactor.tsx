@@ -111,10 +111,10 @@ export const Charactor: React.FC<Props> = ({forms}) => {
                 碑文内容：
               </Typography>
               <Typography>
-                身長
+                身長：
               </Typography>
               <Typography>
-                体重
+                体重：
               </Typography>
               <Typography>
                 パンチ力：

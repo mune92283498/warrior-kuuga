@@ -65,10 +65,10 @@ interface DialogProps {
 }
 
 const DialogTitle = (props: DialogProps) => {
-  const { children, onClose } = props;
+  const { onClose } = props;
   return (
     <MuiDialogTitle>
-      <Typography variant='button'>{children}</Typography>
+      <Typography variant='button'>詳細情報</Typography>
       {onClose ? (
         <IconButton aria-label='close' onClick={onClose}>
           <CloseIcon />

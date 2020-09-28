@@ -51,14 +51,14 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-interface Props {
+type Props = {
   id?: string;
   forms: string[];
   onClick: () => void;
   onClose: () => void;
 }
 
-interface DialogProps {
+type DialogProps = {
   id: string;
   children: React.ReactNode;
   onClose: () => void;
